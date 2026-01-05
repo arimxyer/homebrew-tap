@@ -5,12 +5,12 @@
 class PassCli < Formula
   desc "Secure, cross-platform CLI password and API key manager for developers"
   homepage "https://github.com/arimxyer/pass-cli"
-  version "0.16.0"
+  version "0.16.1"
   license "MIT"
 
   on_macos do
-    url "https://github.com/arimxyer/pass-cli/releases/download/v0.16.0/pass-cli_0.16.0_darwin_all.tar.gz"
-    sha256 "08744e9f74f0ea25381f02e116d33c24f33bb549fe12c5a2572fc8586a01a1df"
+    url "https://github.com/arimxyer/pass-cli/releases/download/v0.16.1/pass-cli_0.16.1_darwin_all.tar.gz"
+    sha256 "12a164f06cc68c7b70a52e17778c7bc33960b28505655fdc9a34944ddfc5c0de"
 
     def install
       bin.install "pass-cli"
@@ -19,15 +19,15 @@ class PassCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/arimxyer/pass-cli/releases/download/v0.16.0/pass-cli_0.16.0_linux_x86_64.tar.gz"
-      sha256 "1b7db719bf9f881fe9811d0caf72b82cab5cd996d201259c40dbcb60540bbba1"
+      url "https://github.com/arimxyer/pass-cli/releases/download/v0.16.1/pass-cli_0.16.1_linux_x86_64.tar.gz"
+      sha256 "b9c8f9a558dbd94e888381e953f04518e9a9d9bdcdb4bfcb74871d739bdefa32"
       def install
         bin.install "pass-cli"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/arimxyer/pass-cli/releases/download/v0.16.0/pass-cli_0.16.0_linux_arm64.tar.gz"
-      sha256 "f93ae1b2b0c0ddf4057fc3771fa3f14d4aed5502a722d835aa09c9bb9d2db356"
+      url "https://github.com/arimxyer/pass-cli/releases/download/v0.16.1/pass-cli_0.16.1_linux_arm64.tar.gz"
+      sha256 "a2691d2225c86ed47cf224f44e508b0d4f9efb1f05174ea2adacf6619521518c"
       def install
         bin.install "pass-cli"
       end
