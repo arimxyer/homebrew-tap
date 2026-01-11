@@ -4,21 +4,21 @@
 class Models < Formula
   desc "Fast CLI and TUI for browsing AI model information from models.dev"
   homepage "https://github.com/arimxyer/models"
-  version "0.2.0"
+  version "0.3.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/arimxyer/models/releases/download/v0.2.0/models-x86_64-apple-darwin.tar.gz"
-      sha256 "e09a6461b2b184c8654e47bf935c3d10d96fa569b97cc805da67c4161a16906a"
+      url "https://github.com/arimxyer/models/releases/download/v0.3.0/models-x86_64-apple-darwin.tar.gz"
+      sha256 "b4b89394292a74aab65363f598a45c904c6898fcad0ecdf61a1ce393274b21da"
 
       def install
         bin.install "models"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/arimxyer/models/releases/download/v0.2.0/models-aarch64-apple-darwin.tar.gz"
-      sha256 "2ed304852545e09e6c130bdba23267608ff2d630b583613b890cdf54ee516aa9"
+      url "https://github.com/arimxyer/models/releases/download/v0.3.0/models-aarch64-apple-darwin.tar.gz"
+      sha256 "453fafae5e369698a5ad93a907b7496804603cca075a3e3bf212553e376a9854"
 
       def install
         bin.install "models"
@@ -28,15 +28,15 @@ class Models < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/arimxyer/models/releases/download/v0.2.0/models-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "6163dde90f73034d50b50920b2a084bdfe3412b0df76941a46e4576fbabf4f3e"
+      url "https://github.com/arimxyer/models/releases/download/v0.3.0/models-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "123feed4fe8c787b9410de1a160fcf04fbedf3867eae414e8f57cf92df84fe13"
       def install
         bin.install "models"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/arimxyer/models/releases/download/v0.2.0/models-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "5a4e445bf97d0612f748039e90408e14cba8af1c1027c5fcc01a484ff6a70fb0"
+      url "https://github.com/arimxyer/models/releases/download/v0.3.0/models-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "daec9258fffcddeb3b93c7388380f0c11da68ec9e600106838b9f222843f4252"
       def install
         bin.install "models"
       end
