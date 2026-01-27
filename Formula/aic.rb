@@ -5,21 +5,21 @@
 class Aic < Formula
   desc "AI Coding Agent Changelog Viewer - fetch changelogs for Claude Code, Codex, OpenCode, Gemini CLI, Copilot CLI"
   homepage "https://github.com/arimxyer/aic"
-  version "2.3.0"
+  version "2.4.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/arimxyer/aic/releases/download/v2.3.0/aic_2.3.0_darwin_amd64.tar.gz"
-      sha256 "69a8aacbf7c04cb9c67191aa97f82b948beede6938c1f277f70e9b5413bab8f7"
+      url "https://github.com/arimxyer/aic/releases/download/v2.4.0/aic_2.4.0_darwin_amd64.tar.gz"
+      sha256 "2b2961bbfa145bddf73c074ebc8d34e22ba908180bcc70879446fdc0838880ee"
 
       def install
         bin.install "aic"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/arimxyer/aic/releases/download/v2.3.0/aic_2.3.0_darwin_arm64.tar.gz"
-      sha256 "d5a021a61956ad53637eb25aca5fc9ee73c85630b022eca02ffc62fd230cc0f8"
+      url "https://github.com/arimxyer/aic/releases/download/v2.4.0/aic_2.4.0_darwin_arm64.tar.gz"
+      sha256 "1097adb53b55b6cc3d801929ef48354da10259eedd6992781f4af2f8940bcc4c"
 
       def install
         bin.install "aic"
@@ -29,15 +29,15 @@ class Aic < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/arimxyer/aic/releases/download/v2.3.0/aic_2.3.0_linux_amd64.tar.gz"
-      sha256 "62580f954314b8475923fdd6814ef45a7df91ee4e21af065dcddadd64ffe07d7"
+      url "https://github.com/arimxyer/aic/releases/download/v2.4.0/aic_2.4.0_linux_amd64.tar.gz"
+      sha256 "ac7390b636924b328c89063fd194bcefc6f5a6038defdcefdf16420f542a2d06"
       def install
         bin.install "aic"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/arimxyer/aic/releases/download/v2.3.0/aic_2.3.0_linux_arm64.tar.gz"
-      sha256 "0b1716136298012a78857f4115b7e57efe30fa0614b9a4f51f96f834bcf24d1b"
+      url "https://github.com/arimxyer/aic/releases/download/v2.4.0/aic_2.4.0_linux_arm64.tar.gz"
+      sha256 "d46d5df81fc6dd0aa80ffb807ffdd9ae9ebc55b4815093892d01d529ab16cf5f"
       def install
         bin.install "aic"
       end
